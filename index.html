@@ -14,31 +14,39 @@
     <title>Weather Tracker</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header bg-primary text-light text-center">
       <div>
         <h1>Weather Dashboard</h1>
       </div>
     </header>
     <!-- wrapper for search bar and results history -->
-    <section class="search-wrapper">
-      <div>
-        <form id="search-form">
-          <input type="text" id="search" placeholder="Search for your city" />
-          <button id="search-btn">Search</button>
-        </form>
-      </div>
-      <div>
-        <ul id="search-history"></ul>
-      </div>
-    </section>
+    <div class="container">
+      <div class="row">
+        <aside class="col-3">
+          <div>
+            <form id="search-form">
+              <input class="inputBar" type="text" id="search" placeholder="Search for your city" />
+              <button class="searchBtn" id="search-btn">Search</button>
+            </form>
+          </div>
+          <div>
+            <ul id="search-history"></ul>
+          </div>
+        </aside>
     <!-- Section Below will be for Weather Displayed at the top -->
+    <div class="col-9">
     <section class="main-search-results">
       <div class="city-data"></div>
       <div class="weather-info"></div>
     </section>
     <!-- Section below will be for 5 day forcast -->
-    <section class="five-day"></section>
-
+    <div class="title-five-day h2"></div>
+    <section class="five-day d-inline-flex">
+    </section>
+  </div>
+</div>
+</div>
+</div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
       integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
